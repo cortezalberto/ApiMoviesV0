@@ -3,7 +3,10 @@ const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
 
+const cors = require('cors')
 
+
+app.use(cors())
 // api routes
 
 const APIindexRouter = require('./routes/api/index');
